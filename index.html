@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3C0T7EPCXT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3C0T7EPCXT');
-</script>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,39 +20,7 @@
         <li><a href="contact.html" id="contactLink">Contact</a></li>
     </ul>
 </div>
-<script>
-    document.getElementById("homeLink").addEventListener("click", function() {
-        for (let i = 0; i < 1; i++) {
-            gtag('event', 'homepage_click', {
-                'event_label': 'Home_' + i,
-            });
-        }
-    });
 
-    document.getElementById("productsLink").addEventListener("click", function() {
-        for (let i = 0; i < 10000000; i++) {
-            gtag('event', 'ourproductspage_click', {
-                'event_label': 'Our Products',
-            });
-        }
-    });
-
-    document.getElementById("calculateLink").addEventListener("click", function() {
-        for (let i = 0; i < 100000000; i++) {
-            gtag('event', 'calculatepage_click', {
-                'event_label': 'Calculate',
-            });
-        }
-    });
-
-    document.getElementById("contactLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000000; i++) {
-            gtag('event', 'contactpage_click', {
-                'event_label': 'Contact',
-            });
-        }
-    });
-</script>
     
 <div class="container" id="homepage">
     <main class="main">
@@ -120,27 +80,10 @@
                 <input id="quantityProduct" class="form_input" type="number" value="0" min="0">
                 <button type="button" class="link" id="btnProduct">Calculate</button>
             </form>
-            <script>
-  document.getElementById("btnProduct").addEventListener("click", function() {
-      for (let i = 0; i < 100000; i++) {
-    gtag('event', 'Calculate_click', {
-        'event_label': 'Calculate button',
-  });
-      }
-  });
-</script>
+            
             <div id="infoProduct" class="total" style="display:none;">
                 <p class="total_price">Total: ₹ <span id="priceProduct"></span></p>
            <p class="total_info">For Further details and to place order, contact: <a href="tel:+919449128645" id="phoneNumberLink">+91 9449128645</a></p>
-<script>
-    document.getElementById("phoneNumberLink").addEventListener("click", function() {
-        for (let i = 0; i < 100000; i++) {
-            gtag('event', 'buynow_click', {
-                'event_label': 'Phone Number Clicked',
-            });
-        }
-    });
-</script>
 
             </div>
 
