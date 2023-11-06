@@ -24,7 +24,19 @@
         <li><a href="contact.html" id="contactLink">Contact</a></li>
     </ul>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calculateLink = document.getElementById('calculateLink');
 
+        if (calculateLink) {
+            calculateLink.addEventListener('click', function () {
+                posthog.capture('Calculate Link Clicked', {
+                    page_location: window.location.href,
+                });
+            });
+        }
+    });
+</script>
     
 <div class="container" id="homepage">
     <main class="main">
